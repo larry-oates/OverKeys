@@ -36,7 +36,8 @@ class UserConfig {
 
     Map<String, String> customShiftMappings = {};
     if (json['customShiftMappings'] != null) {
-      customShiftMappings = Map<String, String>.from(json['customShiftMappings']);
+      customShiftMappings =
+          Map<String, String>.from(json['customShiftMappings']);
     }
 
     return UserConfig(
@@ -63,13 +64,13 @@ class UserConfig {
         : [];
 
     return {
-      'defaultUserLayout': defaultUserLayout,
-      'altLayout': altLayout,
-      'customFont': customFont,
-      'userLayouts': userLayoutsJson,
-      'customShiftMappings': customShiftMappings,
-      'kanataHost': kanataHost,
-      'kanataPort': kanataPort,
+      if (defaultUserLayout != null) 'defaultUserLayout': defaultUserLayout,
+      if (altLayout != null) 'altLayout': altLayout,
+      if (customFont != null) 'customFont': customFont,
+      if (userLayoutsJson.isNotEmpty) 'userLayouts': userLayoutsJson,
+      if (customShiftMappings.isNotEmpty) 'customShiftMappings': customShiftMappings,
+      if (kanataHost != null) 'kanataHost': kanataHost,
+      if (kanataPort != null) 'kanataPort': kanataPort,
     };
   }
 }
