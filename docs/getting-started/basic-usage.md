@@ -22,6 +22,8 @@ Right-clicking the tray icon opens a context menu with the following options:
 - **Auto Hide**: Toggles automatic hiding of the keyboard after a period of inactivity
 - **Reset Position**: Returns the keyboard to its default position at the bottom center of the screen
 - **Preferences**: Opens the preferences window where you can customize OverKeys
+- **Hide/Show***: Hides or shows the keyboard overlay
+- **Reload Config**: Reloads the configuration file to apply any changes made
 - **Exit**: Closes the OverKeys application
 
 ## Keyboard Shortcuts
