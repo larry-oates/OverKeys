@@ -80,6 +80,7 @@ You can add as many layers as you want to the `userLayouts` array. Each must hav
 
 - User layers are loaded when OverKeys starts or when you toggle the setting.
 - If a layer's `trigger` key is pressed, the corresponding layer will be activated according to its `type`.
+- Best case scenario is if the key can be configured so that it could both send a layer change and the trigger key in one press, i.e., combo or macro.
 - Layer change listening and Kanata integration cannot be used simultaneously.
 - When using Kanata integration, the `trigger` and `type` fields in the layer configuration are ignored, as layer switching is controlled by Kanata.
 
