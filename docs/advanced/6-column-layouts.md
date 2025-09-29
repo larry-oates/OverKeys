@@ -16,8 +16,8 @@ The 6-column layout feature in OverKeys allows you to visualize 6-column split m
 1. Open OverKeys
 2. Right-click the OverKeys icon in the system tray
 3. Select **Preferences**
-4. Go to the **General** tab
-5. Toggle the **Enable advanced settings** option
+4. Go to the **Advanced** tab
+5. Toggle the **Turn on advanced settings** option
 6. Toggle the **Use 6 column layout** option
 
 ### Using Configuration File
@@ -58,4 +58,3 @@ The 6-column layout feature in OverKeys allows you to visualize 6-column split m
 - The bottom row will automatically be split into two sections (one for each half of the keyboard), regardless of how many keys are defined
 
 For more details on working with custom layouts, see [Custom Layouts](custom-layouts.md).
-
