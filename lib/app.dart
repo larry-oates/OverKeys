@@ -419,6 +419,7 @@ class _MainAppState extends State<MainApp> with TrayListener, WindowListener {
   }
 
   Future<void> _loadConfiguration() async {
+    await loadCustomKeys();
     await _loadCustomShiftMappings();
     if (_advancedSettingsEnabled) {
       if (_useUserLayout) {

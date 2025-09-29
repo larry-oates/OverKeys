@@ -5,19 +5,21 @@ class UserConfig {
   String? altLayout;
   String? customFont;
   List<KeyboardLayout>? userLayouts;
-  Map<String, String> customShiftMappings;
+  Map<String, String>? customShiftMappings;
   String? kanataHost;
   int? kanataPort;
+  Map<String, dynamic>? customKeys;
 
   UserConfig({
     this.defaultUserLayout,
     this.altLayout,
     this.customFont,
     this.userLayouts,
-    Map<String, String>? customShiftMappings,
+    this.customShiftMappings,
     this.kanataHost,
     this.kanataPort,
-  }) : customShiftMappings = customShiftMappings ?? {};
+    this.customKeys,
+  });
 
   factory UserConfig.fromJson(Map<String, dynamic> json) {
     List<KeyboardLayout> userLayouts = [];
@@ -40,6 +42,11 @@ class UserConfig {
           Map<String, String>.from(json['customShiftMappings']);
     }
 
+    Map<String, dynamic>? customKeys;
+    if (json['customKeys'] != null) {
+      customKeys = Map<String, dynamic>.from(json['customKeys']);
+    }
+
     return UserConfig(
       defaultUserLayout: json['defaultUserLayout'],
       altLayout: json['altLayout'],
@@ -48,6 +55,7 @@ class UserConfig {
       customShiftMappings: customShiftMappings,
       kanataHost: json['kanataHost'],
       kanataPort: json['kanataPort'] != null ? json['kanataPort'] as int : null,
+      customKeys: customKeys,
     );
   }
 
@@ -68,9 +76,11 @@ class UserConfig {
       if (altLayout != null) 'altLayout': altLayout,
       if (customFont != null) 'customFont': customFont,
       if (userLayoutsJson.isNotEmpty) 'userLayouts': userLayoutsJson,
-      if (customShiftMappings.isNotEmpty) 'customShiftMappings': customShiftMappings,
+      if (customShiftMappings != null && customShiftMappings!.isNotEmpty)
+        'customShiftMappings': customShiftMappings,
       if (kanataHost != null) 'kanataHost': kanataHost,
       if (kanataPort != null) 'kanataPort': kanataPort,
+      if (customKeys != null && customKeys!.isNotEmpty) '!': customKeys,
     };
   }
 }
