@@ -137,3 +137,4 @@ This document lists all keys supported by OverKeys for use in custom layouts. Us
 
 1. For now, modifier keys default to their left-side versions. For example, using `SHIFT` will only be triggered by the Left Shift key.
 2. When using the space character `" "` in your layout, be aware that it will inherit all the properties of the spacebar including its width and having the layout name printed on it. If you want to avoid this behavior, use one of the alternative aliases like `Space`, `SPACE`, `SPC`, `␠`, `␣`, `⎵`, instead.
+3. Locale-specific keys are supported starting from v0.3.2. Refer to the [Locales](../advanced/locales.md) documentation instead.

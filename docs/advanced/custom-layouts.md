@@ -76,7 +76,9 @@ You can create custom layouts by adding them to the `userLayouts` section in the
         ["Z", "X", "C", "V", "B", "N", "M", ",", ".", "/"],
         // Fifth row
         [" "]
-    ]
+    ],
+    // Optional: Set to true if the layout is in a foreign language (non-English alphabet)
+    "foreign": false
 }
 ```
 
@@ -92,7 +94,7 @@ You can then set this layout as your default by updating the `defaultUserLayout`
 
 1. **Key Names**: Use standard key symbols or their aliases as defined in the system. For key names and their aliases, see [Supported Keys](../advanced/supported-keys.md).
 2. **Layout Structure**: Each row should be defined as an array of keys. At minimum, a layout must have a top row defined.
-3. **Language Support**: Unicode characters are supported for international layouts but is only recommended for use on [alternative layouts](../advanced/alternative-layouts.md) as key press state of these characters won't be detected
+3. **Language Support**: Unicode characters are supported for international layouts. You may use `foreign: true` especially if the language is mostly non-English alphabet characters (e.g., Russian, Greek, Arabic). Otherwise, refer to the [Locales](../advanced/locales.md) documentation for better handling of locale-specific keys (e.g., German QWERTZ).
 4. **Flexible Row Lengths**: Your custom layout doesn't need to follow standard row lengths. You can create layouts of any dimension. Here's an example of a compact 4×4 layout:
 
     ```jsonc

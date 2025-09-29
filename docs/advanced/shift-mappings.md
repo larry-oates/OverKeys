@@ -91,7 +91,7 @@ Note that when you apply custom shift mappings, the press state of the mapped ke
 
 ## Implementation Notes
 
-- Custom shift mappings only affect the visual representation in OverKeys, not the actual keyboard input.
+- Custom shift mappings only affect the visual representation in OverKeys, not the actual keyboard input/logic. For locale-specific shift mappings that dwell with key logic, refer to the [Locales](../advanced/locales.md) documentation instead
 - The mappings are applied globally across all layouts, including custom and alternative layouts.
 - For modifier keys and function keys, shift mappings typically have no effect.
 
