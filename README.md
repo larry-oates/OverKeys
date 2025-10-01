@@ -121,6 +121,9 @@ This project was initially developed to help with the creator's system-wide prac
       <li>Sturdy</li>
       <li>Sturdy Angle (Staggered)</li>
       <li>Workman</li>
+      <li>Greek</li>
+      <li>Arabic</li>
+      <li>Russian</li>
     </ul>
   </details>
 - **Customizable styles**: Change colors, fonts, sizes, offsets, and key styles
@@ -133,6 +136,7 @@ This project was initially developed to help with the creator's system-wide prac
 - **[Layer switching (Kanata)](./docs/advanced/kanata-integration.md)**: Connect to [Kanata](https://github.com/jtroo/kanata) through TCP to dynamically display the active layer
 - **[Learning Mode](/docs/user-guide/learning-mode.md)**: Color-code keys based on proper finger positions for touch typing
 - **[Reactive Shift Mapping](/docs/advanced/shift-mappings.md)**: Display alternate key symbols when Shift key is pressed
+- **[Locales](/docs/advanced/locales.md)**: Add locale-specific keys in user configuration for key press recognition 
 
 For complete feature details, see the [documentation](docs/index.md).
 
@@ -188,6 +192,7 @@ Complete documentation for OverKeys is available in the [docs](docs/index.md) fo
 - [Kanata Integration](/docs/advanced/kanata-integration.md)
 - [Shift Mappings](/docs/advanced/shift-mappings.md)
 - [Supported Keys](/docs/advanced/supported-keys.md)
+- [Locales](/docs/advanced/locales.md)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
