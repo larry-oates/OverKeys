@@ -1,5 +1,18 @@
 # Changelog
 
+## [0.3.3](https://github.com/conventoangelo/OverKeys/compare/v0.3.2...v0.3.3) (2025-10-03)
+
+
+### 🐛 Bug Fixes
+
+* set defaultUserLayout when using kanata ([216eb8a](https://github.com/conventoangelo/OverKeys/commit/216eb8aa24bb82cc7b5d340875cd82e2a77849bf))
+* update auto-hide behavior based on user layout (non-kanata) ([186362a](https://github.com/conventoangelo/OverKeys/commit/186362a3bc5058a469a96ecddde7de46ea5c6996))
+
+
+### 📚 Documentation
+
+* add locales feature in README.md ([728a4da](https://github.com/conventoangelo/OverKeys/commit/728a4dacfca7197eaef1064c9b2daf3eebb3d161))
+
 ## [0.3.2](https://github.com/conventoangelo/OverKeys/compare/v0.3.1...v0.3.2) (2025-09-29)
 
 
