@@ -652,6 +652,7 @@ class _MainAppState extends State<MainApp> with TrayListener, WindowListener {
             });
           }
         }
+        _updateAutoHideBasedOnLayer(_keyboardLayout.name == _defaultUserLayout?.name);
       }
     }
   }
